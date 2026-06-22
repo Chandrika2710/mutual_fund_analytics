@@ -1,0 +1,22 @@
+DAY 1 - DATA INGESTION SUMMARY
+
+1. Loaded 10 CSV datasets successfully.
+2. Verified schema, shape, data types and sample records.
+3. Explored fund master dataset.
+4. Identified unique fund houses, categories and risk classifications.
+5. Fetched live NAV data from MFAPI.
+6. Retrieved NAV history for:
+   - SBI Bluechip
+   - ICICI Bluechip
+   - Nippon Large Cap
+   - Axis Bluechip
+   - Kotak Bluechip
+
+Data Quality Findings:
+- Three AMFI codes were missing from NAV history:
+  149322
+  149323
+  149324
+
+Status:
+Day 1 completed successfully.
