@@ -1,0 +1,29 @@
+# Data Dictionary
+
+## fact_nav
+
+| Column | Description |
+|----------|------------|
+| amfi_code | Fund Identifier |
+| nav_date | NAV Date |
+| nav | Net Asset Value |
+
+## fact_transactions
+
+| Column | Description |
+|----------|------------|
+| investor_id | Investor ID |
+| transaction_date | Transaction Date |
+| transaction_type | SIP/Lumpsum/Redemption |
+| amount_inr | Transaction Amount |
+| kyc_status | Verification Status |
+
+## fact_performance
+
+| Column | Description |
+|----------|------------|
+| scheme_name | Mutual Fund Name |
+| fund_house | AMC Name |
+| expense_ratio_pct | Expense Ratio |
+| morningstar_rating | Fund Rating |
+| risk_grade | Risk Category |
