@@ -1,0 +1,58 @@
+Absolutely! That's a concise and professional format. For your **Day 3**, here's the observation summary in the same style:
+
+---
+
+# DAY 3 – EXPLORATORY DATA ANALYSIS (EDA) SUMMARY
+
+### Dataset Exploration
+
+1. Loaded the cleaned datasets successfully:
+
+   * `clean_nav.csv`
+   * `clean_performance.csv`
+   * `clean_transactions.csv`
+
+2. Verified dataset structure using:
+
+   * `head()`
+   * `info()`
+   * `describe()`
+   * `columns()`
+
+3. Checked data quality by identifying:
+
+   * Missing values
+   * Duplicate records
+   * Data types
+
+4. Converted date columns into datetime format for time-series analysis.
+
+5. Performed Exploratory Data Analysis (EDA) using statistical summaries and visualizations.
+
+### Visualizations Created
+
+* NAV Trend Over Time
+* Top 10 Mutual Funds by Assets Under Management (AUM)
+* Transaction Type Distribution
+* Investor Age Group Distribution
+* Gender Distribution of Investors
+
+### Key Findings
+
+* Historical NAV values show fluctuations that reflect changing market conditions.
+* SIP is the most common investment method among investors.
+* A small number of mutual fund schemes manage the highest Assets Under Management (AUM).
+* Most investors belong to the working-age population.
+* Both male and female investors actively participate in mutual fund investments.
+* The cleaned datasets are suitable for advanced analytics and dashboard development.
+
+### Data Quality Findings
+
+* No significant missing values were found.
+* No duplicate records were identified.
+* Date and numerical columns were correctly formatted for analysis.
+
+### Status
+
+**Day 3 completed successfully**
+
