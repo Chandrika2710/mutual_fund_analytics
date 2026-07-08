@@ -1,22 +1,20 @@
+import os
 import pandas as pd
 
-df = pd.read_csv("data/raw/02_nav_history.csv")
+# Project root folder
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-print("Before:", len(df))
+# Read raw NAV file
+df = pd.read_csv(os.path.join(BASE_DIR, "data", "raw", "02_nav_history.csv"))
 
-df["date"] = pd.to_datetime(df["date"])
+# Remove duplicates
+df = df.drop_duplicates()
 
-df.drop_duplicates(inplace=True)
+# Handle missing values
+df = df.dropna()
 
-df.sort_values("date", inplace=True)
+# Save cleaned file
+output_path = os.path.join(BASE_DIR, "data", "processed", "clean_nav.csv")
+df.to_csv(output_path, index=False)
 
-df["nav"] = df["nav"].fillna(method="ffill")
-
-print("After:", len(df))
-
-df.to_csv(
-    "data/processed/clean_nav.csv",
-    index=False
-)
-
-print("clean_nav.csv created")
+print("NAV data cleaned successfully.")
